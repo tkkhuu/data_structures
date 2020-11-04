@@ -21,6 +21,8 @@ namespace heap
 		bool hasParent(size_t index);
 		bool hasLeftChild(size_t index);
 		bool hasRightChild(size_t index);
+
+		void swap(const size_t& idxA, const size_t& idxB);
 	
 	public:
 		IntegerHeap();
@@ -31,5 +33,4 @@ namespace heap
 
 	};
 }
-
 }

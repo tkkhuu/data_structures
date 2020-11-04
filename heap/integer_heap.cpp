@@ -49,6 +49,13 @@ bool IntegerHeap::hasRightChild(size_t index)
 	return (rightChildIdx(index) < size_);
 }
 
+void swap(const size_t& idxA, const size_t& idxB)
+{
+	int temp = items_[idxA];
+	items_[idxA] = items_[idxB];
+	items_[idxB] = temp;
+}
+
 void IntegerHeap::insert(const int& val)
 {
 	if (items_.size() == size_)
